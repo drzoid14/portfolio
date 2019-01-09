@@ -149,12 +149,13 @@ iframe {
     margin-left:0px;
 } 
 
-@media only screen and (max-width: 650px){
+@media screen and (max-width: 600px){
     .headerName{
         font-size: 25px
     }
 
     .logo {
+        display:block;
         max-width:90px
     }
 }

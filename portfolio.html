@@ -4,86 +4,95 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Billy's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <link rel="stylesheet" href="./portfolio.css">
-    <link rel="stylesheet" href="animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="portfolio.js"></script>
+
+
+
+
 </head>
 
 <body>
     <header>
         <div class="name">
-            <h1>Billy Angermeier</h1>
+            <div class="bitmoji">
+                <img id="hello" src="./bitmoji-hi.png" alt="bitmoji-hello"> </div>
+            <div class="headerName">
+                <h1>Billy Angermeier</h1>
+            </div>
         </div>
 
-        <div class='links'>
-            <ul>
-                <li>Bio</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
+
     </header>
     <main>
         <div class="intro">
-            <h2>My Name's Billy</h2>
-            <h3>Thanks for visiting my portfolio</h3>
+            <h2>Thanks for visiting my portfolio</h2>
+            
         </div>
         <div class="bio">
-            <p>
+            <p id="aboutMe">
                 Some info on me:
                 <br> I enjoy video and tabletop games
                 <br> I like logic puzzles and brain teasers
                 <br> Playing music is a great stress relief for me
                 <br> I love spending time with my family
                 <br> I'm a full-stack web developer
-                
+
             </p>
 
-            <h4>I enjoy working with HTML, CSS, Mongo, Javascript, jQuery, and ReactJS</h4>
+            <h4 id="workWith">I enjoy working with HTML, CSS, Mongo, Javascript, jQuery, and ReactJS</h4>
+        </div>
+        <div class="projects">
 
-            <div class="projects">
-
-                <div class="tabs">
-                    <div class="tab">Disc Golf Weather</div>
-                    <div class="tab">Cook At Home</div>
-                    <div class="tab">EarBugs</div>
-                </div>
-
+            <div class="tabs">
+                <div class="tab" id="discGolf">Disc Golf Weather</div>
+                <div class="tab" id="pantryManager">Cook At Home</div>
+                <div class="tab" id="earbugs">EarBugs</div>
+            </div>
+            <div class="projectBox">
                 <div class="discGolf">
-                    <h3>Disc Golf Weather</h3>
-                    <iframe src="https://drzoid14.github.io/Frolf-Weather/" frameborder="5"></iframe>
-                    <p>This app was developed from my moving 5 times in the 
-                        matter of 6 years and always trying to find the
-                        closest frisbee golf course.  As an added bonus
-                        it also gives the weather info for the area.
+                    <div class="iframeBox">
+                        <iframe src="https://drzoid14.github.io/Frolf-Weather/" frameborder="5"></iframe>
+                    </div>
+                    <p>This app was developed from my moving 5 times in the matter of 6 years and always trying to find the
+                        closest frisbee golf course. As an added bonus it also gives the weather info for the area.
                     </p>
                 </div>
 
                 <div class="pantry">
-                    <h3>Cook At Home</h3>
-                    <iframe src="https://agile-mountain-17088.herokuapp.com/" frameborder="0"></iframe>
-                    <p>I love cooking and baking, but always seem to need to 
-                        continuously buy new ingredients or cook the same things.
-                        This app uses the spoonacular API to search for recipes
-                        using items kept in your pantry.  This app was built using 
-                        Node, Mongo, and jQuery
+                    <div class="iframeBox">
+                        <iframe src="https://agile-mountain-17088.herokuapp.com/" frameborder="0"></iframe>
+                    </div>
+                    <p>I love cooking and baking, but always seem to need to continuously buy new ingredients or cook the same
+                        things. This app uses the spoonacular API to search for recipes using items kept in your pantry.
+                        This app was built using Node, Mongo, and jQuery
                     </p>
                 </div>
 
                 <div class="earbugs">
-                    <h3>EarBugs</h3>
-                    <iframe src="https://whispering-island-53296.herokuapp.com" frameborder="0"></iframe>
-                    <p>EarBugs is a program designed for the purpose of 
-                        creating and viewing comparisons of videos that sound 
-                        the same so you can share them with others. This was built
-                         using React,js Redux, and Mongo
+                    <div class="iframeBox">
+                        <iframe src="https://whispering-island-53296.herokuapp.com" frameborder="0"></iframe>
+                    </div>
+                    <p>EarBugs is a program designed for the purpose of creating and viewing comparisons of videos that sound
+                        the same so you can share them with others. This was built using React,js Redux, and Mongo
                     </p>
                 </div>
             </div>
 
+
+        </div>
+        <div class="contact">
+            <a href="https://www.linkedin.com/in/billy-angermeier/"><img class="logo" src="./linkedIn.png" alt="Linked in logo"></a>
+            <a href="https://github.com/drzoid14/"><img class="logo" src="./github.png" alt="git hub logo"></a>
+            <a href="mailto: william.r.angermeier@gmail.com"><img class="logo" src="./gmail.png" alt="gmail logo"></a>
+        </div>
+        <div class="goodbye">
+            <h2>Thanks for your time!</h2>
         </div>
     </main>
 

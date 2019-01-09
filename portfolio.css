@@ -1,17 +1,150 @@
-iframe {
-    width:400px;
-    height:400px
+*{
+    
+    font-family: 'Thasadith', sans-serif;
+    
+}
+
+
+
+body{
+    margin:0
+}
+
+header {
+    display:inline-flex;
+    width:100%;
+    background-color: #bd8c7d;
+    color:#49494b
+}
+
+main{
+    background-color:#49494b;
+    color:silver;
+}
+
+p, .tabs{
+    font-size:20px
+}
+
+h2{
+    font-size:28px
+}
+
+h4{
+    font-size:24px
+}
+
+.headerName{
+    font-size: 30px;
+    
+}
+
+.name{
+    width:100%;
+    display: inline-flex
+}
+
+.intro, #workWith, #aboutMe {
+    display:flex;
+    justify-content: center
 }
 
 .discGolf{
-    display:none
+    display:none;
+    animation-duration: 3s;
+    width:80%
 }
 
 .pantry{
-    display:none
+    display:none;
+    animation-duration: 3s;
+    width:80%;
+    margin: 0 auto
 }
+
+.contact{
+    display:flex;
+    justify-content: center;
+}
+
+.logo{
+    max-width:120px;
+    margin: 30px;
+}
+
+
 
 .earbugs{
-    display:none
+    display:none;
+    animation-duration: 3s;
+    width:80%
 }
 
+.bio{
+    display: block;
+    margin: 0 auto
+    
+}
+
+.tab:hover{
+    cursor: pointer;
+
+}
+
+.tab {
+    padding: 10px;
+    border: 1px ;
+    background-color:#bd8c7d;
+    color:#49494b;
+}
+
+.projectBox{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    
+    margin-top: 20px;
+}
+
+.projects{
+    
+    display:block;
+    width:100%;
+    margin: 0 auto;
+    
+}
+
+.goodbye{
+display: flex;
+justify-content: center;
+}
+
+.tabs {
+    display:inline-flex;
+    justify-content: center;
+    margin:0 auto;
+    width:100%;
+}
+
+.iframeBox{
+    width:100%;
+    display: flex;
+    justify-content: center
+}
+
+iframe {
+    min-height: 400px;
+    min-width:360px;
+    max-width: 700px;
+    width: 70%;
+    height:100%
+}
+
+.bitmoji{
+    width:30%;
+}
+
+#hello {
+    max-height: 175px;
+    margin-left:0px;
+}

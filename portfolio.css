@@ -151,11 +151,11 @@ iframe {
 
 @media screen and (max-width: 600px){
     .headerName{
-        font-size: 25px
+        font-size: 20px
     }
 
     .logo {
         display:block;
-        max-width:90px
+        max-width:70px
     }
 }

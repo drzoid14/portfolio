@@ -133,7 +133,7 @@ justify-content: center;
 }
 
 iframe {
-    min-height: 400px;
+    min-height: 500px;
     min-width:360px;
     max-width: 700px;
     width: 70%;

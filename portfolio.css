@@ -156,7 +156,7 @@ iframe {
 @media screen and (max-width: 600px){
     .headerName{
         font-size: 20px;
-        padding-top:30px;
+        padding-top:40px;
     }
 
     .logo {

@@ -148,6 +148,17 @@ iframe {
     width:30%;
 }
 
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color:silver;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 #hello {
     max-height: 175px;
     margin-left:0px;

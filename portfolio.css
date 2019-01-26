@@ -1,6 +1,7 @@
 *{
     
     font-family: 'Thasadith', sans-serif;
+    box-sizing: border-box;
     
 }
 
@@ -14,12 +15,13 @@ header {
     display:inline-flex;
     width:100%;
     background-color: #bd8c7d;
-    color:#49494b
+    color:#49494b;
+    height: 150px;
 }
 
 main{
-    background-color:#49494b;
-    color:silver;
+    color:#49494b;
+    background-color:silver;
 }
 
 p, .tabs{
@@ -36,6 +38,9 @@ h4{
 
 .headerName{
     font-size: 30px;
+    width:60%;
+    text-align: center;
+    padding-top:50px;
     
 }
 
@@ -49,18 +54,22 @@ h4{
     justify-content: center
 }
 
+.earbugs, .discGolf, .pantry {
+    padding-bottom:80px;
+}
+
 #workWith{
     margin:20px;
 }
 
 .discGolf{
-    display:none;
+    display:block;
     animation-duration: 3s;
     width:80%
 }
 
 .pantry{
-    display:none;
+    display:block;
     animation-duration: 3s;
     width:80%;
     margin: 0 auto
@@ -79,9 +88,10 @@ h4{
 
 
 .earbugs{
-    display:none;
+    display:block;
     animation-duration: 3s;
-    width:80%
+    width:80%;
+    margin: 0 auto;
 }
 
 .bio{
@@ -103,11 +113,14 @@ h4{
 }
 
 .projectBox{
-    display:flex;
-    justify-content: center;
+    display:block;
     width:100%;
-    
-    margin-top: 20px;
+    padding-top:50px
+}
+
+.projectBox h2{
+    text-align:center;
+    margin-bottom:20px;
 }
 
 .projects{
@@ -116,6 +129,19 @@ h4{
     width:100%;
     margin: 0 auto;
     
+}
+
+.description{
+    width:80%;
+    text-align:center;
+    margin:0 auto;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.slide {
+    
+    width: 100%
 }
 
 .goodbye{
@@ -145,12 +171,14 @@ iframe {
 }
 
 .bitmoji{
-    width:30%;
+    width:20%;
+    height:100%;
 }
 
 .link{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
 
 a{
@@ -160,10 +188,23 @@ a{
 }
 
 #hello {
-    max-height: 175px;
+    max-height: 150px;
     margin-left:0px;
 } 
 
+.carousel{
+    max-width:65%;
+    margin:0 auto;
+    min-height:320px;
+    min-width:560px
+}
+
+.carousel-indicators{
+    margin-bottom:0;
+    bottom:-10px !important;
+}
+  
+  
 @media screen and (max-width: 600px){
     .headerName{
         font-size: 20px;

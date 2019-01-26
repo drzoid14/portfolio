@@ -8,9 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Thasadith:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 
 
@@ -21,7 +27,7 @@
     <header>
         <div class="name">
             <div class="bitmoji">
-                <img id="hello" src="./bitmoji-hi.png" alt="bitmoji-hello"> </div>
+                <img id="hello" src="./images/bitmoji-hi.png" alt="bitmoji-hello"> </div>
             <div class="headerName">
                 <h1>Billy Angermeier</h1>
             </div>
@@ -30,8 +36,167 @@
 
     </header>
     <main>
+
+
+        <div class="projects">
+
+
+            <div class="projectBox">
+
+                <div class="earbugs">
+                    <h2>EarBugs</h2>
+
+
+                    <div id="earbugs" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#earbugs" data-slide-to="0" class="active"></li>
+                            <li data-target="#earbugs" data-slide-to="1"></li>
+                            <li data-target="#earbugs" data-slide-to="2"></li>
+                            <li data-target="#earbugs" data-slide-to="3"></li>
+                            <li data-target="#earbugs" data-slide-to="4"></li>
+
+                        </ul>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/earbugs1.PNG" class="d-block w-100" alt="landing page">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/earbugs2.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/earbugs3.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/earbugs4.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/earbugs5.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+
+                    <p class="description">EarBugs is a program designed for the purpose of creating and viewing comparisons of videos that sound
+                        the same so you can share them with others. This was built using React,js Redux, and Mongo
+
+                        <br>
+                        <div class="link">
+                            <a href="https://whispering-island-53296.herokuapp.com" target="_blank">See Live</a>
+                            <br>
+                            <a href="https://github.com/drzoid14/earbugs-frontend" target="_blank">GitHub Repo
+                                <img src="./images/github_icon.PNG" alt="github icon">
+
+                            </a>
+                        </div>
+                    </p>
+                </div>
+
+
+
+
+
+
+                <div class="pantry">
+
+                    <h2>Cook At Home</h2>
+
+                    <div id="cookAtHome" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#cookAtHome" data-slide-to="0" class="active"></li>
+                            <li data-target="#cookAtHome" data-slide-to="1"></li>
+                            <li data-target="#cookAtHome" data-slide-to="2"></li>
+
+                        </ul>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/pantry1.PNG" class="d-block w-100" alt="landing page">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/pantry2.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/pantry3.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                    <p class="description">I love cooking and baking, but always seem to need to continuously buy new ingredients or cook the same
+                        things. This app uses the spoonacular API to search for recipes using items kept in your pantry.
+                        This app was built using Node, Mongo, and jQuery. Some functionality is gone, as the Spoonacular
+                        API is under maintenance.
+                        <br>
+                        <div class="link">
+                            <a href="https://agile-mountain-17088.herokuapp.com/" target="_blank">See Live</a>
+                            <br>
+                            <a href="https://github.com/drzoid14/pantry-manager" target="_blank">GitHub Repo
+                            <img src="./images/github_icon.PNG" alt="github icon">
+                            </a>
+                        </div>
+                    </p>
+                </div>
+
+                <div class="disc">
+                    <h2>Disc Golf Weather</h2>
+                    <div id="discGolf" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#discGolf" data-slide-to="0" class="active"></li>
+                            <li data-target="#discGolf" data-slide-to="1"></li>
+
+                        </ul>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/disc1.PNG" class="d-block w-100" alt="landing page">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/disc2.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                    <p class="description">This app was developed from my moving 5 times in the matter of 6 years and always trying to find the
+                        closest frisbee golf course. As an added bonus it also gives the weather info for the area.
+                        <br>
+                        <div class="link">
+                            <a href="https://drzoid14.github.io/Frolf-Weather/" target="_blank">See Live</a>
+                            <br>
+                            <a href="https://github.com/drzoid14/Frolf-Weather" target="_blank">GitHub Repo
+                                <img src="./images/github_icon.PNG" alt="github icon">
+                            </a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="intro">
-            <h2>Thanks for visiting my portfolio</h2>
+            <h2>I am a father and a developer from Raleigh, NC.</h2>
 
         </div>
         <div class="bio">
@@ -41,79 +206,22 @@
                 <br> I like logic puzzles and brain teasers
                 <br> Playing music is a great stress relief for me
                 <br> I love spending time with my family
-                <br> I'm a full-stack web developer
+
 
             </p>
-
-            <h4 id="workWith">I enjoy working with HTML, CSS, Mongo, Javascript, jQuery, and ReactJS</h4>
-        </div>
-        <div class="projects">
-
-            <div class="tabs">
-                <div class="tab" id="discGolf">Disc Golf Weather</div>
-                <div class="tab" id="pantryManager">Cook At Home</div>
-                <div class="tab" id="earbugs">EarBugs</div>
-            </div>
-            <div class="projectBox">
-                <div class="discGolf">
-                    <div class="iframeBox">
-                        <iframe src="https://drzoid14.github.io/Frolf-Weather/" frameborder="5"></iframe>
-                    </div>
-                    <p>This app was developed from my moving 5 times in the matter of 6 years and always trying to find the
-                        closest frisbee golf course. As an added bonus it also gives the weather info for the area.
-                        <br>
-                        <div class="link">
-                            <a href="https://drzoid14.github.io/Frolf-Weather/">See Live</a>
-                        </div>
-                    </p>
-                </div>
-
-                <div class="pantry">
-                    <div class="iframeBox">
-                        <iframe src="https://agile-mountain-17088.herokuapp.com/" frameborder="0"></iframe>
-                    </div>
-                    <p>I love cooking and baking, but always seem to need to continuously buy new ingredients or cook the same
-                        things. This app uses the spoonacular API to search for recipes using items kept in your pantry.
-                        This app was built using Node, Mongo, and jQuery. Some functionality is gone, as the Spoonacular
-                        API is under maintenance.
-                        <br>
-                        <div class="link">
-                            <a href="https://agile-mountain-17088.herokuapp.com/">See Live</a>
-                        </div>
-                    </p>
-                </div>
-
-                <div class="earbugs">
-                    <div class="iframeBox">
-                        <iframe src="https://whispering-island-53296.herokuapp.com" frameborder="0"></iframe>
-                    </div>
-                    <p>EarBugs is a program designed for the purpose of creating and viewing comparisons of videos that sound
-                        the same so you can share them with others. This was built using React,js Redux, and Mongo
-
-                        <br>
-                        <div class="link">
-                            <a href="https://whispering-island-53296.herokuapp.com">See Live</a>
-                        </div>
-                    </p>
-                </div>
-            </div>
-
-
         </div>
         <div class="contact">
-            <a href="https://www.linkedin.com/in/billy-angermeier/">
-                <img class="logo" src="./linkedIn.png" alt="Linked in logo">
+            <a href="https://www.linkedin.com/in/billy-angermeier/" target="_blank">
+                <img class="logo" src="./images/linkedIn.png" alt="Linked in logo">
             </a>
-            <a href="https://github.com/drzoid14/">
-                <img class="logo" src="./github.png" alt="git hub logo">
+            <a href="https://github.com/drzoid14/" target="_blank">
+                <img class="logo" src="./images/github.png" alt="git hub logo">
             </a>
             <a href="mailto: william.r.angermeier@gmail.com">
-                <img class="logo" src="./gmail.png" alt="gmail logo">
+                <img class="logo" src="./images/gmail.png" alt="gmail logo">
             </a>
         </div>
-        <div class="goodbye">
-            <h2>Thanks for your time!</h2>
-        </div>
+
     </main>
 
 </body>

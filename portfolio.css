@@ -203,6 +203,10 @@ a{
     margin-bottom:0;
     bottom:-10px !important;
 }
+
+.mobile{
+    display:none;
+}
   
   
 @media screen and (max-width: 600px){
@@ -214,5 +218,18 @@ a{
     .logo {
         display:block;
         max-width:70px
+    }
+
+    .carousel{
+        max-width:80%;
+        min-width:300px;
+    }
+
+    .main{
+        display:none;
+    }
+
+    .mobile{
+        display:block;
     }
 }

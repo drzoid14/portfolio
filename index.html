@@ -21,6 +21,7 @@
 
 
 
+
 </head>
 
 <body>
@@ -30,6 +31,7 @@
                 <img id="hello" src="./images/bitmoji-hi.png" alt="bitmoji-hello"> </div>
             <div class="headerName">
                 <h1>Billy Angermeier</h1>
+                <h3>Father, Goofball, Developer</h3>
             </div>
         </div>
 
@@ -39,7 +41,9 @@
 
 
         <div class="projects">
-
+            <div class="project-intro">
+                <h3>Here are some of my latest projects, built from the ground up</h3>
+            </div>
 
             <div class="projectBox">
 
@@ -47,7 +51,7 @@
                     <h2>EarBugs</h2>
 
 
-                    <div id="earbugs" class="carousel slide" data-ride="carousel">
+                    <div id="earbugs" class="carousel slide main" data-ride="carousel">
                         <ul class="carousel-indicators">
                             <li data-target="#earbugs" data-slide-to="0" class="active"></li>
                             <li data-target="#earbugs" data-slide-to="1"></li>
@@ -76,29 +80,51 @@
                             </div>
                         </div>
 
-                        <div class="carousel-inner mobile">
-                                <div class="carousel-item active">
-                                    <img src="./images/mobile-ear-1.jpg" class="d-block w-100" alt="landing page">
-                                </div>
-    
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-ear-2.jpg" class="d-block w-100" alt="search results">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-ear-3.jpg" class="d-block w-100" alt="search results">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-ear-4.PNG" class="d-block w-100" alt="search results">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-ear-5.PNG" class="d-block w-100" alt="search results">
-                                </div>
-                            </div>
 
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+
+                        <a class="carousel-control-prev" href="#earbugs" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <a class="carousel-control-next" href="#earbugs" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                    <div id="earbugs-mobile" class="carousel slide mobile" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#earbugs-mobile" data-slide-to="0" class="active"></li>
+                            <li data-target="#earbugs-mobile" data-slide-to="1"></li>
+                            <li data-target="#earbugs-mobile" data-slide-to="2"></li>
+                            <li data-target="#earbugs-mobile" data-slide-to="3"></li>
+                            <li data-target="#earbugs-mobile" data-slide-to="4"></li>
+
+                        </ul>
+
+
+
+                        <div class="carousel-inner mobile">
+                            <div class="carousel-item active">
+                                <img src="./images/mobile-ear-1.jpg" class="d-block w-100" alt="landing page">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/mobile-ear-2.jpg" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mobile-ear-3.jpg" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mobile-ear-4.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mobile-ear-5.PNG" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#earbugs-mobile" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#earbugs-mobile" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
                     </div>
@@ -109,10 +135,10 @@
 
                         <br>
                         <div class="link">
-                            <a href="https://whispering-island-53296.herokuapp.com" target="_blank">See Live</a>
+                            <a class="button" href="https://whispering-island-53296.herokuapp.com" target="_blank">See Live</a>
                             <br>
-                            <a href="https://github.com/drzoid14/earbugs-frontend" target="_blank">GitHub Repo
-                                <img src="./images/github_icon.PNG" alt="github icon">
+                            <a class="button" href="https://github.com/drzoid14/earbugs-frontend" target="_blank">GitHub Repo
+                                <img class="git" src="./images/github_icon.png" alt="github icon">
 
                             </a>
                         </div>
@@ -128,7 +154,7 @@
 
                     <h2>Cook At Home</h2>
 
-                    <div id="cookAtHome" class="carousel slide" data-ride="carousel">
+                    <div id="cookAtHome" class="carousel slide main" data-ride="carousel">
                         <ul class="carousel-indicators">
                             <li data-target="#cookAtHome" data-slide-to="0" class="active"></li>
                             <li data-target="#cookAtHome" data-slide-to="1"></li>
@@ -149,23 +175,43 @@
                             </div>
                         </div>
 
-                        <div class="carousel-inner mobile">
-                                <div class="carousel-item active">
-                                    <img src="./images/mobile-pantry-1.jpg" class="d-block w-100" alt="landing page">
-                                </div>
-    
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-pantry-2.jpg" class="d-block w-100" alt="search results">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-pantry-3.jpg" class="d-block w-100" alt="search results">
-                                </div>
-                            </div>
 
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+
+                        <a class="carousel-control-prev" href="#cookAtHome" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <a class="carousel-control-next" href="#cookAtHome" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                    <div id="cookAtHome-mobile" class="carousel slide mobile" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#cookAtHome-mobile" data-slide-to="0" class="active"></li>
+                            <li data-target="#cookAtHome-mobile" data-slide-to="1"></li>
+                            <li data-target="#cookAtHome-mobile" data-slide-to="2"></li>
+
+                        </ul>
+
+
+
+                        <div class="carousel-inner mobile">
+                            <div class="carousel-item active">
+                                <img src="./images/mobile-pantry-1.jpg" class="d-block w-100" alt="landing page">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/mobile-pantry-2.jpg" class="d-block w-100" alt="search results">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/mobile-pantry-3.jpg" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#cookAtHome-mobile" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#cookAtHome-mobile" data-slide="next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
                     </div>
@@ -176,24 +222,25 @@
                         API is under maintenance.
                         <br>
                         <div class="link">
-                            <a href="https://agile-mountain-17088.herokuapp.com/" target="_blank">See Live</a>
+                            <a class="button" href="https://agile-mountain-17088.herokuapp.com/" target="_blank">See Live</a>
                             <br>
-                            <a href="https://github.com/drzoid14/pantry-manager" target="_blank">GitHub Repo
-                            <img src="./images/github_icon.PNG" alt="github icon">
+                            <a class="button" href="https://github.com/drzoid14/pantry-manager" target="_blank">GitHub Repo
+                                <img class="git" src="./images/github_icon.png" alt="github icon">
                             </a>
                         </div>
                     </p>
                 </div>
 
+
                 <div class="disc">
                     <h2>Disc Golf Weather</h2>
-                    <div id="discGolf" class="carousel slide" data-ride="carousel">
+                    <div id="discGolf" class="carousel slide main" data-ride="carousel">
                         <ul class="carousel-indicators">
                             <li data-target="#discGolf" data-slide-to="0" class="active"></li>
                             <li data-target="#discGolf" data-slide-to="1"></li>
 
                         </ul>
- 
+
                         <div class="carousel-inner main">
                             <div class="carousel-item active">
                                 <img src="./images/disc1.PNG" class="d-block w-100" alt="landing page">
@@ -204,15 +251,34 @@
                             </div>
                         </div>
 
+
+
+                        <a class="carousel-control-prev" href="#discGolf" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#discGolf" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                    <div id="discGolf-mobile" class="carousel slide mobile" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#discGolf-mobile" data-slide-to="0" class="active"></li>
+                            <li data-target="#discGolf-mobile" data-slide-to="1"></li>
+
+                        </ul>
+
+
+
                         <div class="carousel-inner mobile">
-                                <div class="carousel-item active">
-                                    <img src="./images/mobile-disc-1.jpg" class="d-block w-100" alt="landing page">
-                                </div>
-    
-                                <div class="carousel-item">
-                                    <img src="./images/mobile-disc-2.jpg" class="d-block w-100" alt="search results">
-                                </div>
+                            <div class="carousel-item active">
+                                <img src="./images/mobile-disc-1.jpg" class="d-block w-100" alt="landing page">
                             </div>
+
+                            <div class="carousel-item">
+                                <img src="./images/mobile-disc-2.jpg" class="d-block w-100" alt="search results">
+                            </div>
+                        </div>
 
                         <a class="carousel-control-prev" href="#demo" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
@@ -226,31 +292,33 @@
                         closest frisbee golf course. As an added bonus it also gives the weather info for the area.
                         <br>
                         <div class="link">
-                            <a href="https://drzoid14.github.io/Frolf-Weather/" target="_blank">See Live</a>
+                            <a class="button" href="https://drzoid14.github.io/Frolf-Weather/" target="_blank">See Live</a>
                             <br>
-                            <a href="https://github.com/drzoid14/Frolf-Weather" target="_blank">GitHub Repo
-                                <img src="./images/github_icon.PNG" alt="github icon">
+                            <a class="button" href="https://github.com/drzoid14/Frolf-Weather" target="_blank">GitHub Repo
+                                <img class="git" src="./images/github_icon.png" alt="github icon">
                             </a>
                         </div>
                     </p>
                 </div>
             </div>
         </div>
+    </main>
 
+    <footer>
         <div class="intro">
-            <h2>I am a father and a developer from Raleigh, NC.</h2>
+            <h2>Some info on me</h2>
 
         </div>
         <div class="bio">
             <p id="aboutMe">
-                Some info on me:
+                I am a father and a developer from Raleigh, NC.
                 <br> I enjoy video and tabletop games
                 <br> I like logic puzzles and brain teasers
                 <br> Playing music is a great stress relief for me
                 <br> I love spending time with my family
-
-
             </p>
+
+            <h2>I'd love to hear from you</h2>
         </div>
         <div class="contact">
             <a href="https://www.linkedin.com/in/billy-angermeier/" target="_blank">
@@ -264,7 +332,7 @@
             </a>
         </div>
 
-    </main>
+    </footer>
 
 </body>
 

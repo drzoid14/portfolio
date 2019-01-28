@@ -16,13 +16,48 @@ header {
     width:100%;
     background-color: #bd8c7d;
     color:#49494b;
-    height: 150px;
+    min-height: 150px;
 }
 
 main{
     color:#49494b;
     background-color:silver;
+    padding-bottom:25px;
 }
+
+footer{
+    padding-top:50px;
+}
+
+a{
+    color:#49494b !important;
+    display:flex;
+    align-items: center;
+    font-weight: bold
+}
+
+.button{
+    background-color: #eaf3f0;
+    padding:15px 20px;
+    font-weight:bold;
+    border-radius: 5%;
+    box-shadow: 3px 2px 3px grey;
+    width:200px;
+    justify-content: center;
+}
+
+.git{
+    position: relative;
+    left:20px;
+    justify-content: center;
+    width:30px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+
 
 p, .tabs{
     font-size:20px
@@ -36,17 +71,29 @@ h4{
     font-size:24px
 }
 
+.project-intro {
+    width:80%;
+    text-align:center;
+    margin:0 auto;
+    padding-top:50px;
+}
+
 .headerName{
     font-size: 30px;
     width:60%;
     text-align: center;
-    padding-top:50px;
+    align-self: center;
     
 }
 
 .name{
     width:100%;
     display: inline-flex
+}
+
+.intro, .bio{
+    margin:0 auto;
+    text-align:center;
 }
 
 .intro, #workWith, #aboutMe {
@@ -62,11 +109,12 @@ h4{
     margin:20px;
 }
 
-.discGolf{
+.disc{
     display:block;
-    animation-duration: 3s;
+    margin: 0 auto;
     width:80%
 }
+
 
 .pantry{
     display:block;
@@ -77,12 +125,16 @@ h4{
 
 .contact{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .logo{
-    max-width:120px;
+    height:75px;
     margin: 30px;
+}
+
+.bio h2{
+    padding-top:35px
 }
 
 
@@ -172,7 +224,7 @@ iframe {
 
 .bitmoji{
     width:20%;
-    height:100%;
+    
 }
 
 .link{
@@ -210,14 +262,26 @@ a{
   
   
 @media screen and (max-width: 650px){
+
+    #hello{
+        width:80px;
+    }
+
+    .name{
+        height:150px;
+        align-items: flex-end;
+    }
+
     .headerName{
         font-size: 20px;
         padding-top:40px;
+        align-self: center;
+        padding-top:0px;
     }
 
     .logo {
         display:block;
-        max-width:70px
+
     }
 
     .carousel{
@@ -232,4 +296,23 @@ a{
     .mobile{
         display:block;
     }
+
+    .button{
+        width: auto
+    }
+
+    .link{
+        flex-direction:column
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center
+    }
+
+    
+    .headerName h3{
+        display:none;
+    }
 }
+
